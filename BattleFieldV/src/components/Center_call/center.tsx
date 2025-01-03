@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./center.css";
 import GetImage from "./getImages";
-import { countries } from "country-flag-icons";
 
 interface ServerDetails {
 	title: string;
@@ -22,7 +21,7 @@ const ServerDetails: React.FC = () => {
 		const fetchServerDetails = async () => {
 			try {
 				const response = await fetch(
-					"http://localhost:8000/api/server-details"
+					"https://fog-back.onrender.com/api/server-details"
 				);
 				if (!response.ok) {
 					throw new Error("Failed to fetch server details");
