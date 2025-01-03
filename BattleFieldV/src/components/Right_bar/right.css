@@ -1,0 +1,68 @@
+.nav__cont {
+	position: fixed;
+	width: 55px;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	z-index: 100;
+	/* overflow: hidden; */
+	transition: width 0.3s ease, right 0.3s ease;
+	cursor: pointer;
+}
+
+.nav__cont:hover {
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 200px;
+	right: 0;
+}
+li img:hover {
+	filter: brightness(3);
+}
+
+.nav {
+	list-style-type: none;
+	color: white;
+	&:first-child {
+		padding-top: 1.5rem;
+	}
+}
+
+.nav__items {
+	padding-bottom: 1.5rem;
+	/* font-family: "Roboto"; */
+}
+
+.nav__items:hover a:after {
+	opacity: 1;
+}
+
+body {
+	height: 100vh;
+	background: radial-gradient(
+			circle at 94.02% 88.03%,
+			#54a4ff,
+			transparent 100%
+		),
+		radial-gradient(circle at 25.99% 27.79%, #ff94fb, transparent 100%),
+		radial-gradient(circle at 50% 50%, #000000, #000000 100%);
+}
+
+h1 {
+	margin-top: 6rem;
+	margin-right: 80px;
+	text-align: center;
+	/* font-family: "Roboto"; */
+	font-weight: 100;
+	font-size: 4rem;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 6px;
+	text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+.right_text {
+	font-size: 9px;
+}
+.right_text:hover {
+	color: black;
+	background-color: white;
+}

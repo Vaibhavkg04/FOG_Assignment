@@ -1,0 +1,6 @@
+.center_grid2 img {
+	transition: all 0.1s ease-in-out;
+}
+.center_grid2 img:hover {
+	transform: scale(1.15);
+}
